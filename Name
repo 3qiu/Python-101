@@ -1,0 +1,14 @@
+print ("Exercise 1")
+print ("Hello, my name is Qiuyi!")
+
+print ("Exercise 2")
+fname=input("what is your first name?")
+lname=input("what is your last name?")
+print("Hello "+fname+ " " +lname+", how are you doing?")
+
+print ("Exercise 3")
+import math
+r=int(input ("enter radius"))
+h=int(input("enter height"))
+v=math.pi*h*r**2
+print("v",v)

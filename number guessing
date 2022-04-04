@@ -1,0 +1,55 @@
+import random
+import time
+start=time.time()
+
+count=0
+answer=0
+
+level=input("what level player are you? beg, med or adv?")
+
+if level=="beg":
+    x=random.randint(1,10)
+    while answer !=x:
+        count=count+1
+        answer=int(input("guess a number bw 1 and 10:"))
+        if answer<x:
+            print("your number"+str(answer)+"is too low")
+        elif answer>x:
+            print(str(answer)+" too high")
+        else:
+            print("your answer"+str(answer)+" is correct")
+            print("it tooks "+str(count)+" tries")
+
+elif level=="med":
+    x=random.randint(1,50)
+    while answer !=x:
+        count=count+1
+        answer=int(input("guess a number bw 1 and 50:"))
+        if answer<x:
+            print("your number"+str(answer)+"is too low")
+        elif answer>x:
+            print(str(answer)+" too high")
+        else:
+            print("your answer"+str(answer)+" is correct")
+            print("it tooks "+str(count)+" tries")
+
+elif level=="adv":
+    x=random.randint(1,100)
+    while answer !=x:
+        count=count+1
+        answer=int(input("guess a number bw 1 and 100:"))
+        if answer<x:
+            print("your number"+str(answer)+"is too low")
+        elif answer>x:
+            print(str(answer)+" too high")
+        else:
+            print("your answer"+str(answer)+" is correct")
+            print("it tooks "+str(count)+" tries")
+
+else:
+    level=input("what level player are you? beg, med or adv?")
+    print("invalid response")
+            
+end=time.time()
+print(end-start)
+        
